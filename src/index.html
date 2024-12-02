@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +7,97 @@
     <title>Porfolio TailwindCSS</title>
   </head>
   <body>
+    <!-- Header Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-primary block py-6"
+              >Dwisans</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              nama="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-all"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-all"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-all"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-all"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-all"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary transition-all"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
       <div class="container">
         <div class="flex flex-wrap">
-          <div
-            class="w-full self-center px-4 flex flex-wrap justify-center lg:w-1/2 lg:justify-start"
-          >
+          <div class="w-full self-center px-4 lg:w-1/2">
             <h1
-              class="text-base text-center font-semibold text-primary md:text-xl lg:text-left"
+              class="text-base font-semibold text-primary md:text-xl lg:text-left"
             >
               Halo Semua 👋, Nama Saya
               <span class="block font-bold text-4xl mt-1 lg:text-5xl"
@@ -23,12 +105,12 @@
               >
             </h1>
             <h2
-              class="font-medium text-center text-dark text-lg mb-4 lg:text-2xl lg:text-left"
+              class="font-medium text-dark text-lg mb-4 lg:text-2xl lg:text-left"
             >
-              Mahasiswa & Frontend Developer Enthusiast
+              Mahasiswa & Frontend Web Developer Enthusiast
             </h2>
             <p
-              class="font-medium text-center text-slate-500 mb-10 leading-relaxed lg:text-left"
+              class="font-medium text-slate-500 mb-10 leading-relaxed lg:text-left"
             >
               Seseorang yang percaya bahwa setiap baris kode adalah langkah
               menuju inovasi. Terus belajar, berkreasi, dan membawa ide jadi
@@ -185,5 +267,7 @@
       </div>
     </section>
     <!-- About Section End -->
+
+    <script src="/dist/js/script.js"></script>
   </body>
 </html>
